@@ -1,0 +1,39 @@
+// Dynamic URLs
+var urls = {
+	'login': '/login/',
+	'logout': '/logout/',
+	'identify': '/identify/',
+	'20m': 'http://www.20minutos.es/',
+	'20m/register': 'http://www.20minutos.es/usuarios/registro/',
+	'search/type': '/buscador/:type/:text/:page/',
+	'vote/item': '/votar/elemento/',
+	'comments': '/comentarios/:idList/:page/',
+	'comments/send': '/comentarios/enviar/:idList/',
+	'comments/remove': '/comentarios/eliminar/:idComment/',
+	'captcha': '/captcha/',
+	'admin': '/admin/',
+	'private': '/mi-cuenta/',
+	'private/image-list': '/mi-cuenta/image-list/',
+	'private/image-item': '/mi-cuenta/image-item/',
+	'private/list-create': '/mi-cuenta/crear-lista/',
+	'img': 'http://st-listas.20minutos.es/img/'
+};
+
+// Dynamic configuration
+var config = {
+	cookies: {
+		session: 'lists-sess',
+		vote: 'lists-vote'
+	},
+	comments: {
+		onlyRegistered: true,
+		nameLengthMax: 50,
+		commentLengthMax: 3000	},
+	captcha: {
+		onlyAnonymous: true,
+		options: {}	},
+	notices: {
+		nameLengthMax: 50,
+		textLengthMax: 3000,
+		typeOthers: 100	}
+};

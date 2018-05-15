@@ -1,0 +1,65 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BMPw8Z5BWT6j8Nsi_qQHg2bWvAc7u640DtpiU40LAjbcB8KIEEAEYASCWi4UIKAQ4AFDpofHAAmDXAbIBE2xpc3Rhcy4yMG1pbnV0b3MuZXPIAQHaAWNodHRwOi8vbGlzdGFzLjIwbWludXRvcy5lcy9saXN0YS9jdWFsLWVzLWVsLW1lam9yLWxpYnJvLWRlbC1tdW5kby10aGUtYmVzdC1ib29rLW9mLXRoZS13b3JsZC0yNTUwMS_IAr796SKoAwHoAxboA6AJ6AMF9QMAAAAE&amp;num=1&amp;sig=AOD64_0N_lkpwaG-XRgeZHFYMfyCZHWzuQ&amp;client=ca-scm-20minutos_js&amp;adurl=http://118.xg4ken.com/media/redir.php%3Fprof%3D61%26camp%3D1029%26affcode%3Dkw14669281%26cid%3D17835794630%26networkType%3Dcontent%26url%5B%5D%3Dhttp%253A%252F%252Fwww.facebook.com%252Fcampaign%252Flanding.php%253Fcampaign_id%253D116211265138854%2526keyword%253Dgarcia%252Bmarquez%2526placement%253Dbroad%2526creative%253D17835794630%2526extra_1%253D_kenshoo_clickid_"; 
+google_ad.visible_url = "www.Facebook.com"; 
+google_ad.line1 = "\x26#191;Buscas a Garcia Marquez?"; 
+google_ad.line2 = "Encuentra a tus amigos en Facebook."; 
+google_ad.line3 = "\x26#161;Reg\x26#237;strate ya!"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BVWzwZ5BWT6j8Nsi_qQHg2bWvAcjC9pUD6PuRqjnAjbcB8KIEEAIYAiCWi4UIKAQ4AFDypc_h_v____8BYNcBsgETbGlzdGFzLjIwbWludXRvcy5lc8gBAdoBY2h0dHA6Ly9saXN0YXMuMjBtaW51dG9zLmVzL2xpc3RhL2N1YWwtZXMtZWwtbWVqb3ItbGlicm8tZGVsLW11bmRvLXRoZS1iZXN0LWJvb2stb2YtdGhlLXdvcmxkLTI1NTAxL8gCmMS7HagDAegDFugDoAnoAwX1AwAAAAQ&amp;num=2&amp;sig=AOD64_2i8T5OHPLdm3yKYm6lGEsZ71aFUQ&amp;client=ca-scm-20minutos_js&amp;adurl=http://118.xg4ken.com/media/redir.php%3Fprof%3D52%26camp%3D632%26affcode%3Dkw137082%26cid%3D15294429832%26networkType%3Dcontent%26url%5B%5D%3Dhttp%253A%252F%252Fwww.facebook.com%252Fcampaign%252Flanding.php%253Fcampaign_id%253D211687995530423%2526keyword%253DVoIP%252Bdescarga%2526placement%253Dbroad%2526creative%253D15294429832%2526extra_1%253D_kenshoo_clickid_"; 
+google_ad.visible_url = "www.Facebook.com"; 
+google_ad.line1 = "Descargar VoIP"; 
+google_ad.line2 = "Llama a Tus Amigos \x26amp; Con\x26#233;ctate"; 
+google_ad.line3 = "en Facebook. \x26#161;Reg\x26#237;strate Hoy!"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BhLEIZ5BWT6j8Nsi_qQHg2bWvAbjmsJcC8LaklSXAjbcB0NkREAMYAyCWi4UIKAQ4AFD519fJBGDXAbIBE2xpc3Rhcy4yMG1pbnV0b3MuZXPIAQHaAWNodHRwOi8vbGlzdGFzLjIwbWludXRvcy5lcy9saXN0YS9jdWFsLWVzLWVsLW1lam9yLWxpYnJvLWRlbC1tdW5kby10aGUtYmVzdC1ib29rLW9mLXRoZS13b3JsZC0yNTUwMS-oAwHoAxboA6AJ6AMF9QMAAAAE&amp;num=3&amp;sig=AOD64_0lpEzCnQ3qxb3inZtNxd1k_gE0Hg&amp;client=ca-scm-20minutos_js&amp;adurl=http://www.peoplesadvantage.com/peoples-talent-coaching-institute.html"; 
+google_ad.visible_url = "www.peoplesadvantage.com"; 
+google_ad.line1 = "Coaching certification"; 
+google_ad.line2 = "Convi\x26#233;rtase en un coach certificado"; 
+google_ad.line3 = "Sesiones diurnas y s\x26#225;batinas"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 4; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=BOuT-Z5BWT6j8Nsi_qQHg2bWvAdTfyLQC_KiuvBnAjbcB0PcHEAQYBCCWi4UIKAQ4AFD4k9XE_v____8BYNcBoAHc69vlA7IBE2xpc3Rhcy4yMG1pbnV0b3MuZXPIAQHaAWNodHRwOi8vbGlzdGFzLjIwbWludXRvcy5lcy9saXN0YS9jdWFsLWVzLWVsLW1lam9yLWxpYnJvLWRlbC1tdW5kby10aGUtYmVzdC1ib29rLW9mLXRoZS13b3JsZC0yNTUwMS-AAgGoAwHoAxboA6AJ6AMF9QMAAAAEiAYB&amp;num=4&amp;cid=5GgNplQCckZ8zv55JlBsh_Wq&amp;sig=AOD64_3-0Eg-uf1qNIwWwM382BVbcxeTFQ&amp;client=ca-scm-20minutos_js&amp;adurl=http://www.metodosilvadevida.com/lp/metodo-silva"; 
+google_ad.visible_url = "www.metodosilvadevida.com"; 
+google_ad.line1 = "Aprende el Metodo Silva"; 
+google_ad.line2 = "Descarga el Mas Poderoso Metodo de"; 
+google_ad.line3 = "Meditacion. Sonido Alfa Gratis."; 
+google_ad.regionname = ""; 
+google_ads[3] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://listas.20minutos.es/lista/cual-es-el-mejor-libro-del-mundo-the-best-book-of-the-world-25501/%26hl%3Des%26client%3Dca-scm-20minutos_js%26adU%3Dwww.Facebook.com%26adT%3D%25C2%25BFBuscas%2Ba%2BGarcia%2BMarquez%253F%26adU%3Dwww.Facebook.com%26adT%3DDescargar%2BVoIP%26adU%3Dwww.peoplesadvantage.com%26adT%3DCoaching%2Bcertification%26adU%3Dwww.metodosilvadevida.com%26adT%3DAprende%2Bel%2BMetodo%2BSilva%26gl%3DDO%26hideleadgen%3D1\x26usg\x3dAFQjCNGHeSGIrdSYsmkcXe2ykjHRdWd5sg";
+var google_attribution_text = "Anuncios Google";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

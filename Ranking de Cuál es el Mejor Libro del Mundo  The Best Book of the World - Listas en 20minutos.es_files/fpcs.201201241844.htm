@@ -1,0 +1,22 @@
+
+<!-- saved from url=(0078)http://cdn.aimfar.solution.weborama.fr/iframe/publisher/fpcs.201201241844.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <script src="fpcs.201201241844.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    var url = document.location.href;
+    if (url.indexOf('cdn')) {
+        var fpcs = FingerPrint.get();
+        var surl = url.split('/');
+        var scheme = surl[0];
+        var domain = surl[2];
+        var server = domain.replace('cdn.','');
+        var call_url = scheme+'//'+server+'/fcgi-bin/fpcs.fcgi?fp='+fpcs;
+
+        document.write('<img src="' + call_url + '" width=1 height=1 style="display:none"/>');
+    }
+</script><img src="fpcs.fcgi" width="1" height="1" style="display:none">
+
+
+</body></html>

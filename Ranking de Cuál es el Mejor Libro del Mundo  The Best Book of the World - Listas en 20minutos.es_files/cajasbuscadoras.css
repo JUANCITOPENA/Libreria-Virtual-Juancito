@@ -1,0 +1,149 @@
+/* @import "reset.css"; */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;}
+body {
+	line-height: 1;
+	color: black;
+	background: white;}
+ol, ul {
+	list-style: none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";}
+blockquote, q {
+	quotes: "" "";}
+
+/* default.css */
+
+body {
+	padding: 0 0 100px;
+	margin: 0;
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+	color: #000;
+	font: normal 11px/13px Arial, sans-serif;
+	letter-spacing: 0em;
+}
+
+a {
+	color: #002e49;
+	text-decoration: none;
+}
+
+input,
+select,
+textarea {
+	border: 0;
+	padding: 3px;
+	font: normal 11px/13px Arial, sans-serif;
+	letter-spacing: 0em;
+}
+input[type=text] {padding: 4px 3px;}
+
+.inner {
+	position: relative;
+	padding: 10px;
+	border: 1px solid #e9e8e4;
+	background-color: #fff;
+	color: #656565;
+}
+
+/* front-page.css */
+
+.bg-button {
+	background-color: transparent;
+	background-image: url(img/ui/grid-buttons.png);
+	background-repeat: no-repeat;
+	margin-top:10px;
+	display:inline-block;
+	color:#fff;
+	font-weight:bold;
+	height:19px;
+	text-align:center;
+	padding-top:5px;
+	text-decoration:none;
+}
+
+/* sidebar.css */
+
+.module .shadow {
+	-moz-box-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0px 1px 0px rgba(0,0,0,.2);
+	box-shadow: 0px 1px 0px rgba(0,0,0,.2);
+}
+
+/* modules.css */
+
+.module{margin-bottom:1.3em;}
+
+.module .shadow{-moz-border-radius:6px 6px 6px 6px;-webkit-border-radius:6px 6px 6px 6px;}
+.conTabs .tabs li{-webkit-border-top-left-radius: 4px;-webkit-border-top-right-radius: 4px;}
+
+.iframeBar{padding:0;margin:0;background:#F8F7F4; width: 313px;}
+#sidebar .tabs, .iframeBar .tabs{zoom:1;margin-bottom:0;margin-bottom:-1px;position:relative;z-index:200;font-size:13px;}
+#sidebar .tabs:after, .iframeBar .tabs:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+#sidebar .tabs li, .iframeBar .tabs li{-moz-border-radius-topleft:4px;-moz-border-radius-topright:4px;background-color:#00395B;margin-right:4px;padding:0 9px;float:left;}
+#sidebar .tabs li a, .iframeBar .tabs li a{line-height:26px;font-weight:normal;color:#fff}
+#sidebar .tabs .selected, #sidebar .ui-tabs-selected, .iframeBar .tabs .selected, .iframeBar .tabs .ui-tabs-selected{background-color:#fff!important;border:1px solid #E9E8E4;border-bottom:0}
+#sidebar .tabs .selected a, #sidebar .ui-tabs-selected a, .iframeBar .tabs .selected a, .iframeBar .tabs .ui-tabs-selected a{background-color:#fff;color:#002E49!important}
+
+.iframeBar .inner{height:173px}
+.conTabs .inner{-moz-border-radius-topleft:0;-webkit-border-radius-topleft:0}
+
+.iframeBar #searchForm_row1 select, .iframeBar #searchForm_row2 select { float: left; display: inline; }
+
+.hidden{overflow:hidden;position:absolute;left:-200em;text-indent:-200em;}
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+.infojobs label{font-size:12px;display:block;color:#000;padding:0 0 .3em .4em}
+.infojobs input{border:1px solid #DDD;color:#999;font-size:10px;width:98%}
+.infojobs select{width:48%;float:left;border:1px solid threedface;padding:0;margin-top:1em}
+.module select.sel_right{float:right;}
+.infojobs .bg-button{background-position:left -1062px;background-image:url("img/uib/grid-buttons.png");font-size:11px;height:25px;margin:10px 0 0 5px;padding:1px 0 4px 0;width:99px;color:#fff;font-weight:normal;border:0;float:right;cursor:pointer}
+.infojobs_v2{background:#fff url() no-repeat .8em bottom;}
+.module .logo{text-align:center;padding:1em 0 0 0;}
+.infojobs_v2 .logo{text-align:right;padding:2.5em 0 1.5em 0;}
+
+/* .autoscout select{width:48%;float:left;border:1px solid threedface;padding:0;margin-top:1em} */
+.autoscout select{margin:5px;width:134px;border:1px solid threedface;padding:0;}
+.autoscout #buscar{background-color:transparent;background-image:url("img/uib/grid-buttons.png");background-position:left -68px;background-repeat:no-repeat;text-align:center;text-decoration:none;font-size:11px;height:24px;margin:10px 5px 0 5px;padding:1px 0 4px 0;width:71px;color:#fff;border:0;float:right;cursor:pointer}
+
+.fotocasa label{font-size:12px;display:block;color:#000;padding:0 0 .3em .4em}
+.fotocasa .logo{padding-bottom:1.5em}
+.fotocasa input{border:1px solid #DDD;color:#999;font-size:10px;width:98%}
+.fotocasa .bg-button{background-position:left -68px;font-size:11px;height:24px;margin:10px 0 0 5px;padding:1px 0 4px 0;width:71px;color:#fff;font-weight:normal;border:0;float:right;cursor:pointer}
+
+/* Módulos sidebar con reborder */
+#sidebar .inner { border-color: #ccc; }
+sidebar .tabs .selected, #sidebar .ui-tabs-selected, .iframeBar .tabs .selected, .iframeBar .tabs .ui-tabs-selected
+{
+	-color: #ccc #ccc -moz-use-text-color;
+}
+
+i

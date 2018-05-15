@@ -1,0 +1,15 @@
+ 
+var innerCode='';
+function navigatorFlashVersion(){navigatorFlashVersion.gfp=function(){var v=[0,0,0];if(navigator.plugins&&navigator.mimeTypes.length){var x=navigator.plugins["Shockwave Flash"];if(x&&x.description)return x.description.replace(/([a-zA-Z]|\s)+/,"").replace(/(\s+r|\s+b[0-9]+)/,".").split('.');}else{var axo;try{axo=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");}catch(e){try{var axo=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");v=[6,0,21];axo.AllowScriptAccess="always";}catch(e){if(v[0]==6)return v;}try{axo=new ActiveXObject("ShockwaveFlash.ShockwaveFlash");}catch(e){}
+}if(axo!=null)return axo.GetVariable('$version').split(' ')[1].split(',');}return v;}; navigatorFlashVersion.v=navigatorFlashVersion.gfp();var myMajorFlashVersion = (navigatorFlashVersion.v.length > 0) ? navigatorFlashVersion.v[0] : 0;var myMinorFlashVersion = (navigatorFlashVersion.v.length > 1) ? navigatorFlashVersion.v[1] : 0;if(myMajorFlashVersion == 10 && myMinorFlashVersion >= 2){ myMajorFlashVersion = 11; }return myMajorFlashVersion;}
+var p1560235_FlashMode9=(9<=navigatorFlashVersion());
+
+innerCode = innerCode + '<a target="_blank"  href="http://smart.20minutos.es/diff/234/1560235/go10.asp?1560235%3B73302%3B8270144436322731530%3B230678797%3BS%3Bsystemtarget=%24a%3D0t%3B%24cn%3D0_0%3B%24isp%3D0%3B%24qc%3D1310147379%3B%24ql%3Dunknown%3B%24qpc%3D0100%3B%24qpp%3D0%3B%24qt%3D20_340_33040t%3B%24b%3D16999%3B%24o%3D11051%3B%24sh%3D768%3B%24sw%3D1280%3B%3B5900823%3Bclickvars="><img id="img5900823" src="http://ced.sascdn.com/diff/234/1524437/728x90(0).gif" alt="" width=728 height=90 border="0"></a>';
+
+
+
+
+innerCode = innerCode + '\r\n';
+
+
+if(typeof(sas_ajax)!='undefined'&&sas_ajax){sas_appendToContainer(3985,innerCode);}else{document.write(innerCode);}

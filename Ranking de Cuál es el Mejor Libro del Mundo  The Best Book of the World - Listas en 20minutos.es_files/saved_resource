@@ -1,0 +1,12 @@
+if (screen.width && screen.height) {var jsinfocall=new Image;jsinfocall.src='http://smart.20minutos.es/a/track/jsinfo.asp?sw='+screen.width+'&sh='+screen.height;}
+ 
+var innerCode='';
+if (typeof(innerCode) == 'undefined') var innerCode; innerCode = innerCode + '<scr'+'ipt type="text/javascript">\r\n'+'    var wr_host    = "aimfar";\r\n'+'    var wr_site      = 674;\r\n'+'    var wr_page      = 2044;\r\n'+'    var wr_board     = 5900;\r\n'+'    var wr_boardsize = "1x1";\r\n'+'    var wr_floating  = 1;\r\n'+'    var wr_detail    = \'\';\r\n'+'    var wr_thema     = 0;\r\n'+'</scr'+'ipt>\r\n'+'<scr'+'ipt type="text/javascript" src="http://cstatic.weborama.fr/js/publisher/customers/aimfar.js?clicktag=http://smart.20minutos.es/clic/countgo.asp?1548735;73302;0;230678797;V;systemtarget=%24a%3D0t%3B%24cn%3D0_0%3B%24isp%3D0%3B%24qc%3D1310147379%3B%24ql%3Dunknown%3B%24qpc%3D0100%3B%24qpp%3D0%3B%24qt%3D20_340_33040t%3B%24b%3D16999%3B%24o%3D11051;;5874950;URL=&rnd=230678797"></scr'+'ipt>\r\n';
+
+
+
+
+innerCode = innerCode + '\r\n';
+
+
+if(typeof(sas_ajax)!='undefined'&&sas_ajax){sas_appendToContainer(3984,innerCode);}else{document.write(innerCode);}

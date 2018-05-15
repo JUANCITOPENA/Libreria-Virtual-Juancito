@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://www.20minutos.es/cajasbuscadoras/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>¿Qué buscas?</title>
+	<link rel="stylesheet" href="cajasbuscadoras.css" type="text/css">
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.tabs.js"></script>
+
+	<script type="text/javascript">
+//<![CDATA[
+function FormularioContar(url_pixel)
+{
+	document.getElementById('cajasbuscadorascounter').innerHTML = '<img src="' + url_pixel + '" alt="counter" />';
+}
+//]]>
+	</script>
+</head>
+
+<body class="iframeBar">
+	<div class="module conTabs ui-tabs ui-widget ui-widget-content ui-corner-all" id="cajasbuscadoras">
+		<ul class="tabs container ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+			<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="http://www.20minutos.es/cajasbuscadoras/#cochesbox">Coches</a></li><li class="ui-state-default ui-corner-top"><a href="http://www.20minutos.es/cajasbuscadoras/#segurosbox">Seguros</a></li><li class="ui-state-default ui-corner-top"><a href="http://www.20minutos.es/cajasbuscadoras/#pisosbox">Pisos</a></li><li class="ui-state-default ui-corner-top"><a href="http://www.20minutos.es/cajasbuscadoras/#ingdirectbox">INGDirect</a></li>
+		</ul>
+
+		<div id="cochesbox" class="inner shadow autoscout ui-tabs-panel ui-widget-content ui-corner-bottom">
+	<script src="makesmodels.js" language="javascript" type="text/javascript"></script>
+
+	<form name="searchform" method="get" action="http://www.autoscout24.es/ListGN.aspx" target="_blank">
+		<input type="hidden" name="cy" value="E">
+		<input type="hidden" name="zipc" value="E">
+		<input type="hidden" name="ustate" value="N">
+		<input type="hidden" name="ustate" value="U">
+		<input type="hidden" name="extcidm" value="7628a0180202690">
+
+		<div id="searchForm_row1">
+			<select name="make" onchange="chooseMake(&#39;searchform&#39;, true);">
+				<option value="0">Marca</option>
+				<script type="text/javascript">strMakes();</script><option value="14979">AC</option><option value="16356">Acura</option><option value="16352">Aixam</option><option value="6">Alfa Romeo</option><option value="16378">Artega</option><option value="15671">Asia</option><option value="8">Aston Martin</option><option value="9">Audi</option><option value="15643">Austin</option><option value="15644">Autobianchi</option><option value="13">BMW</option><option value="14">BMW-Alpina</option><option value="16379">BYD</option><option value="11">Bentley</option><option value="16344">Bertone</option><option value="16367">Brilliance</option><option value="15">Bugatti</option><option value="16">Buick</option><option value="17">Cadillac</option><option value="15672">Caravans-Wohnm</option><option value="16335">Caterham</option><option value="16357">Chatenet</option><option value="16384">Chery</option><option value="19">Chevrolet</option><option value="16381">China Automobile</option><option value="20">Chrysler</option><option value="21">Citroen</option><option value="16329">Continental</option><option value="16380">Corvette</option><option value="16333">DAF</option><option value="16383">DR Motor</option><option value="16360">Dacia</option><option value="22">Daewoo</option><option value="23">Daihatsu</option><option value="16330">De Lorean</option><option value="25">De Tomaso</option><option value="2152">Dodge</option><option value="16339">Donkervoort</option><option value="27">Ferrari</option><option value="28">Fiat</option><option value="29">Ford</option><option value="16363">Fun Tech</option><option value="16386">GAZ</option><option value="2153">GMC</option><option value="16337">Galloper</option><option value="16342">Gillet</option><option value="16346">Ginetta</option><option value="16382">Great Wall</option><option value="16345">HDPIC</option><option value="15674">HUMMER</option><option value="31">Honda</option><option value="33">Hyundai</option><option value="16387">IZH</option><option value="16355">Infiniti</option><option value="15629">Innocenti</option><option value="35">Isuzu</option><option value="14882">Iveco</option><option value="16365">JDM</option><option value="37">Jaguar</option><option value="38">Jeep</option><option value="16354">Keinath</option><option value="39">Kia</option><option value="16349">La Forza </option><option value="40">Lada</option><option value="41">Lamborghini</option><option value="42">Lancia</option><option value="15641">Land Rover</option><option value="16372">Landwind</option><option value="43">Lexus</option><option value="16353">Ligier</option><option value="14890">Lincoln</option><option value="44">Lotus</option><option value="48">MG</option><option value="16338">MINI</option><option value="16359">Mahindra</option><option value="15645">Marcos</option><option value="45">Maserati</option><option value="16348">Maybach</option><option value="46">Mazda</option><option value="47">Mercedes-Benz</option><option value="15673">Mercury</option><option value="16361">Microcar</option><option value="50">Mitsubishi</option><option value="51">Morgan</option><option value="16388">Moskvich</option><option value="15665">Motos-Bikes</option><option value="52">Nissan</option><option value="16373">Noble</option><option value="53">Oldsmobile</option><option value="15670">Oldtimer</option><option value="54">Opel</option><option value="16328">Others-Andere</option><option value="16341">Pagani</option><option value="15638">Panther</option><option value="55">Peugeot</option><option value="16350">Piaggio</option><option value="2151">Plymouth</option><option value="16332">Polaris</option><option value="56">Pontiac</option><option value="57">Porsche</option><option value="15636">Proton</option><option value="15646">Puch</option><option value="60">Renault</option><option value="61">Rolls-Royce</option><option value="62">Rover</option><option value="63">Saab</option><option value="16369">Santana</option><option value="64">Seat</option><option value="65">Skoda</option><option value="15525">Smart</option><option value="16377">Spyker</option><option value="66">SsangYong</option><option value="67">Subaru</option><option value="68">Suzuki</option><option value="71">TVR</option><option value="15666">Talbot</option><option value="16327">Tata</option><option value="16343">Teener</option><option value="70">Toyota</option><option value="15633">Trabant</option><option value="16326">Trailer-AnhÃ¤nger</option><option value="2120">Triumph</option><option value="16253">Trucks-Lkw</option><option value="16389">UAZ</option><option value="16385">VAZ</option><option value="16340">Vauxhall</option><option value="16347">Venturi</option><option value="74">Volkswagen</option><option value="73">Volvo</option><option value="16336">Wartburg</option><option value="16351">Wiesmann</option><option value="16358">YES!</option><option value="16334">Zastava</option>
+			</select>
+			<select name="model">
+				<option value="0">Modelo</option>
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+				<option value=""></option>
+			</select>
+		</div>
+
+		<div id="searchForm_row2">
+			<select name="fregfrom">
+				<option value="0">Año desde...</option>
+				<option value="2009">2009</option>
+				<option value="2008">2008</option>
+				<option value="2007">2007</option>
+				<option value="2006">2006</option>
+				<option value="2005">2005</option>
+				<option value="2004">2004</option>
+				<option value="2003">2003</option>
+				<option value="2002">2002</option>
+				<option value="2001">2001</option>
+				<option value="2000">2000</option>
+				<option value="1999">1999</option>
+				<option value="1998">1998</option>
+				<option value="1997">1997</option>
+				<option value="1996">1996</option>
+				<option value="1995">1995</option>
+				<option value="1994">1994</option>
+				<option value="1993">1993</option>
+				<option value="1992">1992</option>
+				<option value="1991">1991</option>
+				<option value="1990">1990</option>
+				<option value="1985">1985</option>
+				<option value="1980">1980</option>
+				<option value="1975">1975</option>
+				<option value="1970">1970</option>
+				<option value="1965">1965</option>
+				<option value="1960">1960</option>
+				<option value="1950">1950</option>
+				<option value="1940">1940</option>
+				<option value="1930">1930</option>
+				<option value="1920">1920</option>
+				<option value="1910">1910</option>
+			</select>
+			<select name="kmto">
+				<option value="0">Km hasta...</option>
+				<option value="5000">5.000</option>
+				<option value="10000">10.000</option>
+				<option value="20000">20.000</option>
+				<option value="30000">30.000</option>
+				<option value="40000">40.000</option>
+				<option value="50000">50.000</option>
+				<option value="60000">60.000</option>
+				<option value="70000">70.000</option>
+				<option value="80000">80.000</option>
+				<option value="90000">90.000</option>
+				<option value="100000">100.000</option>
+				<option value="125000">125.000</option>
+				<option value="150000">150.000</option>
+				<option value="175000">175.000</option>
+				<option value="200000">200.000</option>
+			</select>
+		</div>
+
+		<div class="mod_inf">
+			<input type="submit" value="Buscar" id="buscar" name="buscar" onclick="FormularioContar(&#39;http://smart.20minutos.es/call/pubimppixel/2271264/?&#39;);">
+		</div>
+	</form>
+
+	<p class="logo"><img src="autoscout_logo.jpg" alt="AutoScout 24"></p>
+</div>
+<div id="segurosbox" class="inner shadow ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+	<iframe src="seguros.htm" frameborder="0" scrolling="no" width="290" height="173"></iframe>
+</div>
+<!-- http://www.fotocasa.es/portals/20/searchbox.aspx -->
+<div id="pisosbox" class="inner shadow fotocasa ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+	<p class="logo">
+		<a href="http://smart.20minutos.es/call/cliccommand/3231040/?http://www.fotocasa.es?OrigenVisita=45&link=11017&utm_source=20minutos&utm_medium=20minutos_box&utm_campaign=20minutos_boxlink" target="_blank">
+			<img src="fotocasalogo.gif" alt="Fotocasa">
+		</a>
+	</p>
+
+	<form name="SearchBox" method="post" action="http://www.fotocasa.es/portals/20/searchbox.aspx" id="SearchBox" target="_blank" onsubmit="FormularioContar(&#39;http://smart.20minutos.es/call/pubimppixel/3230968/?&#39;); fotocasa_sendText(); return false;">
+		<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3ODQ3MDgzOTQPZBYEAgMQZGQWBAIBDxYCHgRocmVmBX5odHRwOi8vd3d3LmZvdG9jYXNhLmVzP09yaWdlblZpc2l0YT00NSZsaW5rPTExMDE3JnV0bV9zb3VyY2U9MjBtaW51dG9zJnV0bV9tZWRpdW09MjBtaW51dG9zX2JveCZ1dG1fY2FtcGFpZ249MjBtaW51dG9zX2JveGxpbmsWAgIBDxYCHgNzcmMFMWh0dHA6Ly93d3cuZm90b2Nhc2EuZXMvcG9ydGFscy8yMC9pbWFnZXMvbG9nby5naWZkAgMPFgIfAQU3aHR0cDovL3d3dy5mb3RvY2FzYS5lcy9wb3J0YWxzLzIwL2ltYWdlcy90ZXh0U2VhcmNoLmdpZmQCBQ8WAh4EVGV4dAV3PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cDovL3N0YXRpYy5mb3RvY2FzYS5lcy9qcy9zcGplZzVsODRlYmppYm1laTdwc2thXzQ5XzEuMjAxMDAzMTYxMzA4LmpzIj48L3NjcmlwdD5kZPTFskb2EHfawOUXTjWsL7A3pYc3">
+		<fieldset>
+			<div class="form-item">
+				<label for="txtSearchBox">Escribe aquí qué y dónde buscas:</label>
+				<input id="txtSearchBox" type="text" name="txtSearchBox" value="">
+			</div>
+			<input id="btnSearchBox" type="submit" value="Buscar" class="bg-button">
+		</fieldset>
+	</form>
+
+	<script src="20minutos.js" language="javascript" type="text/javascript"></script>
+</div>
+<div id="ingdirectbox" class="inner shadow ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+	<iframe src="ingdirect.htm" frameborder="0" scrolling="no" width="290" height="173"></iframe>
+</div>
+
+	</div>
+	<div id="cajasbuscadorascounter" style="display:none;"></div>
+
+<script type="text/javascript">
+var tabManager = {};
+
+tabManager.loadedTabs = [];
+
+tabManager.loadTab = function(tabIndex)
+{
+	if (jQuery.inArray(tabIndex, tabManager.loadedTabs) !== -1)
+	{
+		return; // already loaded
+	}
+
+	tabManager.loadedTabs.push(tabIndex);
+
+	var functionName = 'loadTab' + tabIndex;
+	if (eval('typeof ' + functionName) === 'function')
+	{
+		eval(functionName + '()');
+	}
+}
+
+tabManager.load = function()
+{
+	// Get initial tab
+	var initialTab = 0;
+	var selectedTab = [0,1,2,3];
+	if (selectedTab.length == 1)
+	{
+		initialTab = selectedTab[0];
+	}
+	else
+	{
+		var index = Math.floor(Math.random() * selectedTab.length);
+		initialTab = selectedTab[index];
+	}
+
+	// Load initial tab
+	tabManager.loadTab(initialTab);
+
+	// Configure jQuery UI Tab
+	jQuery('#cajasbuscadoras').tabs({
+		selected: initialTab,
+		select: function(event, ui)
+		{
+			tabManager.loadTab(ui.index);
+		}
+	});
+}
+
+jQuery(document).ready(function() {
+	tabManager.load();
+});
+</script>
+
+</body></html>

@@ -1,0 +1,10 @@
+
+#featured h2 , #featured h4 {
+text-shadow: 1px 2px #000;
+	
+}
+
+#featured .ui-tabs-panel 
+{
+background:#000;
+}

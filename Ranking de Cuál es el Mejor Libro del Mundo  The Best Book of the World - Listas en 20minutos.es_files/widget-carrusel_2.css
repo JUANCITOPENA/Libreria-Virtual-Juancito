@@ -1,0 +1,48 @@
+#featured {
+height:313px;
+}
+#featured ul.ui-tabs-nav
+{
+top: 226px;
+}
+#featured .ui-tabs-panel
+{
+height:226px;
+}
+#featured .imgxl
+{
+	border-radius: 10px 10px 0 0;
+		-ms-border-radius: 10px 10px 0 0;
+		-moz-border-radius: 10px 10px 0 0;
+		-webkit-border-radius: 10px 10px 0 0;
+		-khtml-border-radius: 10px 10px 0 0;
+		height:226px;
+}
+#featured .imgxl img
+{
+display:none;
+}
+#featured .ui-tabs-panel .info
+{
+background:#000;
+}
+#featured .title
+{
+width:100%;
+margin-top:143px;
+margin-left:0;
+background-image:url(http://static1.minijuegosgratis.com/mj/mbr/templates/base/i/1black.png);
+
+height:50px;
+padding-left:10px;
+}
+#featured h2
+{
+width:200px;
+padding-top:5px;
+#featured h2
+}
+#featured .play {
+z-index: 5;
+margin-top: 150px;
+}

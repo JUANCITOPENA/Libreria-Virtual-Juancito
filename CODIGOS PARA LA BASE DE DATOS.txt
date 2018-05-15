@@ -1,0 +1,2 @@
+INSERT INTO `carro`.`catalogo` (`id`, `producto`, `autor`, `precio`) VALUES (NULL, 
+'¿Quién mató a Inmaculada de Silva?', 'Marina Mayoral', '675.00');

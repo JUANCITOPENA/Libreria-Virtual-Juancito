@@ -1,0 +1,78 @@
+/* Carousel */
+		
+#carousel {
+	position: relative; /* Necesario */
+	overflow: hidden; /* Necesario */
+	height: 250px;
+	margin-left:35px;
+	background:#5B5B5B url(carousel-bg.png) bottom left repeat-x;
+}
+
+#carousel .belt {
+	position: absolute; /* Necesario */
+	left: 0;
+	top: 0;
+	margin:0 10px 10px 0;
+}
+
+#carousel .panel {
+	width:265px;
+	float: left; /* Necesario */
+	overflow: hidden;
+	margin: 15px;
+	padding:7px;
+	border:1px solid #5B5B5B;
+	background:#383838 url(carousel-panel-bg.png) bottom left repeat-x;
+}
+
+#carousel .panel .panel-text {
+	padding-top:5px;
+	font-size:13px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FFF;
+}
+
+#carousel .panel .panel-text a {
+	color:#CCC;
+	text-decoration:none;
+}
+
+#carousel .panel .panel-text a:hover {
+	color:#FFF;
+	text-decoration:underline;
+}
+
+			/* Botones del carousel */
+			
+.button-prev {
+	height:250px;
+	width:35px;
+	float:left;
+	background:#5B5B5B url(carousel-bg.png) bottom left repeat-x;
+	-moz-border-radius:10px 0 0 10px;
+}
+
+.button-prev a {
+	display:block;
+	padding:5px;
+	margin-top:105px;
+}
+
+.button-next {
+	height:250px;
+	width:35px;
+	float:right;
+	background:#5B5B5B url(carousel-bg.png) bottom left repeat-x;
+	-moz-border-radius:0 10px 10px 0;
+}
+
+.button-next a {
+	display:block;
+	padding:5px;
+	margin-top:105px;
+}
+
+
+a img {
+	border:none;
+}

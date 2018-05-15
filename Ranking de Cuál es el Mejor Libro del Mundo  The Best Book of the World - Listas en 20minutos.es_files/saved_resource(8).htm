@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0041)http://www.20minutos.es/cajasbuscadoras2/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>¿Qué buscas?</title>
+	<link rel="stylesheet" href="cajasbuscadoras.css" type="text/css">
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="jquery.tabs.js"></script>
+
+<script type="text/javascript">
+function FormularioContar(url_pixel)
+{
+	jQuery.ajax({
+		url: url_pixel,
+		cache: false,
+		async: false,
+		success: function(html) {}
+	});
+}
+</script>
+</head>
+
+<body class="iframeBar">
+	<div class="module conTabs ui-tabs ui-widget ui-widget-content ui-corner-all" id="cajasbuscadoras">
+		<ul class="tabs container ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+			<li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="http://www.20minutos.es/cajasbuscadoras2/#empleobox">Empleo</a></li><li class="ui-state-default ui-corner-top"><a href="http://www.20minutos.es/cajasbuscadoras2/#lacaixabox">e-la Caixa</a></li>
+		</ul>
+		<!---Buscador infojobs--->
+<div id="empleobox" class="inner shadow infojobs infojobs_v2 ui-tabs-panel ui-widget-content ui-corner-bottom" style="background-image:url(http://estaticos.20minutos.es/css4/img/uib/infojobs_bg.jpg)">
+	<form name="ij_buscador" id="ij_buscador" action="http://www.20minutos.es/empleo/ofertas/" method="post" target="_top">
+		<fieldset>
+			<div class="form-item">
+				<label for="ij_clave">Palabra clave (Auxiliar, Madrid, ...)</label>
+				<input type="text" maxlength="200" id="ij_clave" name="ij_clave" value="">
+			</div>
+
+			<div class="form-item">
+				<label for="ij_localidad" class="hidden">Localidad</label>
+				<select name="ij_localidad" id="ij_localidad" class="sel_localidad">
+					<option value="todas">Localidad</option>
+					<optgroup label="Por comunidad...">
+						<option value="almeria,cadiz,cordoba,granada,huelva,jaen,malaga,sevilla,"> Andalucía</option>
+						<option value="huesca,teruel,zaragoza,">Aragón</option>
+						<option value="asturias,"> Asturias</option>
+						<option value="las-palmas,tenerife,">Canarias</option>
+						<option value="cantabria,">Cantabria</option>
+						<option value="albacete,ciudad-real,cuenca,guadalajara,toledo,">Castilla-La Mancha</option>
+						<option value="avila,burgos,leon,palencia,salamanca,segovia,soria,valladolid,zamora,">Castilla y León</option>
+						<option value="barcelona,girona,lleida,tarragona,">Cataluña</option>
+						<option value="madrid,">Madrid</option>
+						<option value="navarra,">Navarra</option>
+						<option value="alicante,castellon,valencia,">Com. Valenciana</option>
+						<option value="badajoz,caceres,">Extremadura</option>
+						<option value="a-coruna,lugo,ourense,pontevedra,">Galicia</option>
+						<option value="illes-balears,">Islas Baleares</option>
+						<option value="la-rioja,">La Rioja</option>
+						<option value="guipuzcoa,vizcaya,alava,">Pais Vasco</option>
+						<option value="murcia,">Región de Murcia</option>
+						<option value="ceuta,melilla,">Ceuta y Melilla</option>
+					</optgroup>
+					<optgroup label="Por provincia...">
+						<option value="a-coruna">A Coruña</option>
+						<option value="alava">Álava</option>
+						<option value="albacete">Albacete</option>
+						<option value="alicante">Alicante/Alacant</option>
+						<option value="almeria">Almería</option>
+						<option value="asturias">Asturias</option>
+						<option value="avila">Ávila</option>
+						<option value="badajoz">Badajoz</option>
+						<option value="barcelona">Barcelona</option>
+						<option value="burgos">Burgos</option>
+						<option value="caceres">Cáceres</option>
+						<option value="cadiz">Cádiz</option>
+						<option value="cantabria">Cantabria</option>
+						<option value="castellon">Castellón/Castelló</option>
+						<option value="ceuta">Ceuta</option>
+						<option value="ciudad-real">Ciudad Real</option>
+						<option value="cordoba">Córdoba</option>
+						<option value="cuenca">Cuenca</option>
+						<option value="girona">Girona</option>
+						<option value="granada">Granada</option>
+						<option value="guadalajara">Guadalajara</option>
+						<option value="guipuzcoa">Guipúzcoa</option>
+						<option value="huelva">Huelva</option>
+						<option value="huesca">Huesca</option>
+						<option value="illes-balears">Illes Balears</option>
+						<option value="jaen">Jaén</option>
+						<option value="la-rioja">La Rioja</option>
+						<option value="las-palmas">Las Palmas</option>
+						<option value="leon">León</option>
+						<option value="lleida">Lleida</option>
+						<option value="lugo">Lugo</option>
+						<option value="madrid">Madrid</option>
+						<option value="malaga">Málaga</option>
+						<option value="melilla">Melilla</option>
+						<option value="murcia">Murcia</option>
+						<option value="navarra">Navarra</option>
+						<option value="ourense">Ourense</option>
+						<option value="palencia">Palencia</option>
+						<option value="pontevedra">Pontevedra</option>
+						<option value="salamanca">Salamanca</option>
+						<option value="tenerife">Santa Cruz de Tenerife</option>
+						<option value="segovia">Segovia</option>
+						<option value="sevilla">Sevilla</option>
+						<option value="soria">Soria</option>
+						<option value="tarragona">Tarragona</option>
+						<option value="teruel">Teruel</option>
+						<option value="toledo">Toledo</option>
+						<option value="valencia">Valencia/València</option>
+						<option value="valladolid">Valladolid</option>
+						<option value="vizcaya">Vizcaya</option>
+						<option value="zamora">Zamora</option>
+						<option value="zaragoza">Zaragoza</option>
+					</optgroup>
+				</select>
+			</div>
+
+			<div class="form-item">
+				<label for="ij_categoria" class="hidden">Categoría</label>
+				<select class="sel_right" name="ij_categoria" id="ij_categoria">
+					<option value="todas">Categoría</option>
+					<option value="administracion-empresas">Administración de empresas</option>
+					<option value="administracion-publica">Administración Pública</option>
+					<option value="atencion-a-cliente">Atención a clientes</option>
+					<option value="calidad-produccion-id">Calidad, producción e I+D</option>
+					<option value="comercial-ventas">Comercial y ventas</option>
+					<option value="compras-logistica-almacen">Compras, logística y almacén</option>
+					<option value="diseno-artes-graficas">Diseño y artes gráficas</option>
+					<option value="educacion-formacion">Educación y formación</option>
+					<option value="finanzas-banca">Finanzas y banca</option>
+					<option value="informatica-telecomunicaciones">Informática y telecomunicaciones</option>
+					<option value="ingenieros-tecnicos">Ingenieros y técnicos</option>
+					<option value="inmobiliario-construccion">Inmobiliario y construcción</option>
+					<option value="legal">Legal</option>
+					<option value="marketing-comunicacion">Marketing y comunicación</option>
+					<option value="profesiones-artes-oficios">Profesiones, artes y oficios</option>
+					<option value="recursos-humanos">Recursos humanos</option>
+					<option value="sanidad-salud">Sanidad y salud</option>
+					<option value="turismo-restauracion">Turismo y restauración</option>
+					<option value="otros">Otros</option>
+				</select>
+			</div>
+
+			<input type="submit" value="Buscar ofertas" class="bg-button">
+		</fieldset>
+	</form>
+
+	<p class="logo"><img src="infojobs_logopeq.gif" alt="Infojobs"></p>
+</div>
+
+<script type="text/javascript">
+function loadTab0()
+{
+	jQuery('#ij_clave').val('');
+	jQuery('#ij_localidad').val('todas');
+	jQuery('#ij_categoria').val('todas');
+};
+</script>
+<!---/Buscador infojobs--->
+<div id="lacaixabox" class="inner shadow ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+	<iframe src="lacaixa.htm" frameborder="0" scrolling="no" width="290" height="173"></iframe>
+</div>
+
+	</div>
+
+<script type="text/javascript">
+var tabManager = {};
+
+tabManager.loadedTabs = [];
+
+tabManager.loadTab = function(tabIndex)
+{
+	if (jQuery.inArray(tabIndex, tabManager.loadedTabs) !== -1)
+	{
+		return; // already loaded
+	}
+
+	tabManager.loadedTabs.push(tabIndex);
+
+	var functionName = 'loadTab' + tabIndex;
+	if (eval('typeof ' + functionName) === 'function')
+	{
+		eval(functionName + '()');
+	}
+}
+
+tabManager.load = function()
+{
+	// Get initial tab
+	var initialTab = 0;
+	var selectedTab = [0,1];
+	if (selectedTab.length == 1)
+	{
+		initialTab = selectedTab[0];
+	}
+	else
+	{
+		var index = Math.floor(Math.random() * selectedTab.length);
+		initialTab = selectedTab[index];
+	}
+
+	// Load initial tab
+	tabManager.loadTab(initialTab);
+
+	// Configure jQuery UI Tab
+	jQuery('#cajasbuscadoras').tabs({
+		selected: initialTab,
+		select: function(event, ui)
+		{
+			tabManager.loadTab(ui.index);
+		}
+	});
+}
+
+jQuery(document).ready(function() {
+	tabManager.load();
+});
+</script>
+
+
+<!--0.0108060836792--><!-- frontal-07 --><!--1331072983--></body></html>

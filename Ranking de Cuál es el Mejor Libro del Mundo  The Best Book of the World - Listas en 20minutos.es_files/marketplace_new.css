@@ -1,0 +1,48 @@
+.marketplace{width:992px;height:39px;margin:auto;}
+#portada .marketplace {background:transparent url(../img/mktplace_portada.gif) no-repeat left top;margin-top:-2em;margin-bottom:2em}
+#listas_contenido .marketplace{background:transparent url(../img/mktplace_interior.gif) no-repeat left top;margin-top:-1.7em;margin-bottom:2em;clear:both;*position:relative;*top:-1.7em}
+
+#marketplace{width:992px;height:39px;margin:auto; margin-bottom: 2em;}
+#listas > #marketplace { margin-bottom: 0; }
+#portada #marketplace .marketplace {background:transparent url(../img/mktplace_portada.gif) no-repeat left top;}
+#listas > #marketplace .marketplace{background:transparent url(../img/mktplace_interior.gif) no-repeat left top;}
+
+.marketplace .titulo{float:left;color:#fff;padding:12px 0px 0 20px;}
+#listas > #marketplace .marketplace .titulo{padding:8px 0px 0 20px;color:#000; font-size: 12px;}
+.marketplace .market{float:left;}
+.marketplace .market li{float:left;padding:12px 0; margin-left: 20px;}
+#listas > #marketplace .marketplace .market li{padding:10px 0; margin-left: 20px; font-size: 12px;}
+#listas > #marketplace .marketplace .market li a { padding-bottom: 5px; }
+.marketplace .market img{vertical-align:middle;margin-right:4px}
+.marketplace .market a{font-size:1em;color:#fff; padding-left: 21px;}
+.marketplace .market a:hover{text-decoration:none!important;}
+
+.marketplace #eltiempo-mini-home { float: right; padding:1px 10px 0 0;position:relative; height: 30px; line-height: 30px;}
+.marketplace #eltiempo-mini-home a { color: #eee; }
+#listas > #marketplace .marketplace #eltiempo-mini-home a { color: #000; }
+
+#listas > #marketplace .marketplace .eltiempo{padding:4px 20px 0 0;}
+#listas > #marketplace .marketplace .market a{color:#000;}
+#listas > #marketplace .marketplace .eltiempo span{top:8px}
+#listas > #marketplace .marketplace .eltiempo .meteo{top:4px}
+#listas > #marketplace .marketplace .eltiempo strong{top:8px;color:#000}
+
+.market li a.car {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -4px;}
+.market li a.car-insurance {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -28px;}
+.market li a.real-state {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -52px;}
+.market li a.classifieds {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -78px;}
+.market li a.employment {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -103px;}
+.market li a.betting {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -129px;}
+.market li a.lotteries {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -3951px;}
+.market li a.relationships {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -3974px;}
+.market li a.poker {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -4000px;}
+.market li a.apuestas {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -4739px;}
+.market li a.viajes {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -4395px;}
+.market li a.videoclub {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -4460px;}
+.market li a.amovens {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -4763px;}
+.market li a.ofertas {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -4824px;}
+.market li a.ahorro {background: transparent url(http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525) no-repeat left -4888px;}
+.market li span.ahorro.vlink { background: url("http://estaticos.20minutos.es/css4/img/ui/grid-icons.png?20110525") no-repeat scroll left -4888px transparent; }
+
+.market li span.vlink { color: #fff; font-size: 1em; padding-left: 21px; cursor: pointer; }
+#listas > #marketplace .marketplace .market span.vlink {color:#000;}

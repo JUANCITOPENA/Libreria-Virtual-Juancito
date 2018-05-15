@@ -1,0 +1,17 @@
+
+
+
+<div id = "redessociales">
+
+   <a href =""><img src = "images/facebook.png"/></a>
+   <a href =""><img src = "images/twitter.png"/></a>
+   <a href =""><img src = "images/youtube.png"/></a>
+</div>
+
+
+            
+   	<div id = "textologo">
+
+      	<img src = "images/textologo.png"/>
+
+        </div>
