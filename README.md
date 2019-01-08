@@ -6,4 +6,4 @@ Es una Libreria Virtual para la venta de libros, donde tiene varias secciones y 
 
 Espero les sirva.
 
-![](img/portada.jpg)
+![](imagenes/portada.jpg)
