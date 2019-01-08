@@ -12,7 +12,7 @@ if (!$con)
 		die();
 		}
 //selecciona la base de datos
-$db = mysqli_select_db("demo");
+$db = mysqli_select_db("libro");
 
 //consulta
 $q="delete from libro where id=".$id."";

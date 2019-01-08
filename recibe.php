@@ -1,49 +1,44 @@
 <?php
 include("header.php");
-$id = $_GET["id"];
-$titulo = $_GET["titulo"];
-$autor = $_GET["autor"];
-$precio = $_GET["precio"];
-
-
-
 
 //conecta con la base de datos:
-$con = mysqli_connect("localhost", "root", "","demo");
+//$con = mysqli_connect("localhost", "root", "","libro");
+
+$link = mysqli_connect("localhost", "root", "");
+
+
+
 //hace la confirmacion de la conexion:
-if (!$con)
+if (!$link)
 	{	
 		echo "error en la conexion";
 		die();
 		}
 //selecciona la base de datos
-$db = mysqlI_select_db("demo");
+//$db = mysqli_select_db("libro");
+mysqli_select_db($link, "libro");
 
-//consulta
-$q="insert into libro
-	(id, titulo, autor, precio)
-	values
-	('".$id."', '".$titulo."', '".$autor."', '".$precio."')";
-	
+
+$tildes = $link->query("SET NAMES 'utf8'"); //Para que se muestren las tildes
+
+$result = mysqli_query($link, "SELECT * FROM libro");
+
+mysqli_data_seek ($result, 0);
+
+$extraido= mysqli_fetch_array($result);
+
+
 
 //lleva la consulta a MySql
-$consul = mysqli_query($q);
 
 //2da consulta
-$q2="select * from libro where id=".$id."";
+
+$result = mysqli_query($link, "SELECT * FROM libro");
 
 //vuelvo a llevarle la 2da consulta a MysQl
-$consul = mysqli_query($q2);
 
-
-
-
-
-
-
-while ($f=mysqli_fetch_array($consul))
+while ($f=mysqli_fetch_array($result))
 {
-
 	echo "<h1>DETALLES ULTIMO LIBRO AGREADO</h1>";
 	
 	echo "<div  id = custom>";
@@ -62,8 +57,9 @@ while ($f=mysqli_fetch_array($consul))
 
 }
 
+mysqli_free_result($result);
 echo "<a href=mostrar.php id =enlace>Ver Listado de Libros</a>";
-mysql_close($con);
+echo"<br/>";
 include("footer.php");
 	
 ?>

@@ -8,7 +8,7 @@ extract($_REQUEST);
 //asign�ndoles a esas variables valores iguales a los que ten�a asociados en la matriz. Es decir, convierte a $_GET['id'] en $id,
 //sin que tengamos que tomarnos el trabajo de escribir $id=$_GET['ID'];
 mysqli_connect("localhost","root","");
-mysqli_select_db("demo");
+mysqli_select_db("libro");
 //inclu�mos la conexi�n a nuestra base de datos
 if(!isset($cantidad)){$cantidad=1;}
 //Como tambi�n vamos a usar este archivo para actualizar las cantidades,
@@ -19,8 +19,8 @@ $row=mysqli_fetch_array($qry);
 //en el array superglobal $_SESSION['carro'], de manera que rescatamos los valores de dicho array
 //y se los asignamos a la variable $carro, previa comprobaci�n con isset de que $_SESSION['carro']
 //ya haya sido definida
-if(isset($_SESSION['demo']))
-$carro=$_SESSION['demo'];
+if(isset($_SESSION['libro']))
+$carro=$_SESSION['libro'];
 //Ahora introducimos el nuevo producto en la matriz $carro, utilizando como �ndice el id del producto
 //en cuesti�n, encriptado con md5. Utilizamos md5 porque genera un valor alfanum�rico que luego,
 //cuando busquemos un producto en particular dentro de la matriz, no podr� ser confundido con la posici�n

@@ -4,20 +4,15 @@
 
 <h1>AGREGAR NUEVO LIBRO</h1>
 <br>
-
-
 		<form action=recibe.php method=GET>
 		<table width = "" id = "customtable">
-		
-		
 		
 		<tr>
 	   <th>ID: </th>
 	   <td><input type=text name=id></td>
 	    <td rowspan = "4"><img src = "images/libros.gif" ></td>
 	   </tr>
-	   
-	   
+	 
 	   <tr>
 	   <th>Titulo:</th>
 	   <td> <input type=text name=titulo></td>

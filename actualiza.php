@@ -14,7 +14,7 @@ include("../header.php");
 
 
 //conecta con la base de datos
-$con = mysqli_connect("localhost", "root", "","demo");
+$con = mysqli_connect("localhost", "root", "","libro");
 //hace la confirmacion de la conexion
 if (mysqli_connect_errno())
 	{
@@ -23,7 +23,7 @@ if (mysqli_connect_errno())
 
 
 //selecciona la base de datos
-$db = mysqli_select_db("demo");
+$db = mysqli_select_db("libro");
 
 //consulta
 $q="UPDATE  libro SET

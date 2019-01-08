@@ -16,22 +16,27 @@
 
 
 $id = "";
-  $con = mysqli_connect("localhost", "root", "","demo");
-  $numero = "";
+
+ $link = mysqli_connect("localhost", "root", "");
+ //$con = mysqli_connect("localhost", "root", "","libro");
+
+ $numero = "";
 //hace la confirmacion de la conexion
-if (!$con)
+if (!$link)
 	{	
 		echo "error en la conexion";
 		die();
 		}
-//selecciona la base de datos
-$db = mysqli_select_db("demo");
 
-//2da consulta
-$q2="select * from libro";
 
-  $consul = mysqli_query($q2);	
-while ($row=mysqli_fetch_array($consul))
+mysqli_select_db($link, "libro");
+$tildes = $link->query("SET NAMES 'utf8'"); //Para que se muestren las tildes
+$result = mysqli_query($link, "SELECT * FROM libro");
+mysqli_data_seek ($result, 0);
+$extraido= mysqli_fetch_array($result);
+
+
+while ($f=mysqli_fetch_array($result))
 {
 
 
@@ -50,6 +55,7 @@ while ($row=mysqli_fetch_array($consul))
   
 
 ?>
+
 </table>
 <br>
 

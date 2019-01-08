@@ -10,13 +10,13 @@ if (!$con)
 		echo "error en la conexion";
 		die();
 		}
-//selecciona la base de datos
-$db = mysqli_select_db("demo");
+//selecciona la base de datos:
+$db = mysqli_select_db("libro");
 
 //2da consulta
 $q2="select * from libro where id=".$id."";
 
-//vuelvo a llevarle la 2da consulta a MysQl
+//vuelvo a llevarle la 2da consulta a MySQL:
 $consul = mysqli_query($q2);
 
 $f=mysqli_fetch_array($consul);

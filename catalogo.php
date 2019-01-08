@@ -1,26 +1,18 @@
 <?php
 ob_start("ob_gzhandler");
-//error_reporting(E_ALL);
-//@ini_set('display_errors', '1');
-//Las funciones ob_start y ob_end_flush te permiten escojer en qu� momento enviar el resultado
-// de un script al navegador. Si no las utilizamos estamos
-//obligados a que nuestra primera l�nea de c�digo sea session_start() u obtendremos un error
+
 session_start();
 //conectamos a la base de datos
-mysqli_connect("localhost","root","","demo");
-//mysqli_select_db("demo");
-//rescatamos los valores guardados en la variable de sesi�n (si es que hay alguno, cosa que
-//comprobamos con isset) y los asignamos a $carro. Si no existen valores, ponemos a false el
-//valor de $carro
-if(isset($_SESSION['demo']))
-$carro=$_SESSION['demo'];else $carro=false;
+mysqli_connect("localhost","root","","libro");
+
+if(isset($_SESSION['libro']))
+$carro=$_SESSION['libro'];else $carro=false;
 
 //y hacemos la consulta
 
+$result = mysqli_query($link, "SELECT * FROM libro");
 
-$sql = ("SELECT * FROM libro ORDER BY titulo ASC");
-
-
+//$sql = ("SELECT * FROM libro ORDER BY titulo ASC");
 
 ?>
 
@@ -41,10 +33,9 @@ include("header.php");
   <?php
 
   //mostramos todos nuestros art�culos, viendo si han sido agregados o no a nuestro carro de compra
+  while ($f=mysqli_fetch_array($result))
+  {
 
-
-	while ($row=mysqli_fetch_array($sql))
-	{
   ?>
   <tr valign="middle" class="catalogo">
     <td><?php echo $row['producto'] ?></td>
@@ -55,9 +46,7 @@ include("header.php");
 	<?php
 
 	if(!$carro || !isset($carro[md5($row['id'])]['identificador']) || $carro[md5($row['id'])]['identificador']!=md5($row['id'])){
-	//si el producto no ha sido agregado, mostramos la imagen de no agregado, linkeada
-	// a nuestra p�gina de agregar producto y transmit��ndole a dicha
-	//p�gina el id del art�culo y el identificador de la sesi�n
+
 	?>
 
 	<a href="agregacar.php?<?php echo SID ?>&id=<?php echo $row['id']; ?>"><img src="images/productonoagregado.gif" border="0"  title="Agregar al Carrito"></a><?php }
@@ -74,4 +63,5 @@ include("header.php");
 <?php
 include("footer.php");
 ob_end_flush();
+
 ?>
